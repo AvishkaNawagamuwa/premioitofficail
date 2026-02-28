@@ -352,9 +352,9 @@ const Careers = () => {
             >
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-3xl blur-2xl opacity-20"></div>
               <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
                 alt="Team collaboration"
-                className="relative rounded-3xl shadow-2xl w-full"
+                className="relative rounded-3xl shadow-2xl w-full object-cover h-96"
               />
             </motion.div>
           </div>

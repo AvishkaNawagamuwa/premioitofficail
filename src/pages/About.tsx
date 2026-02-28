@@ -32,37 +32,37 @@ const About = () => {
     {
       name: 'Sarah Johnson',
       role: 'CEO & Founder',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
       bio: 'Visionary leader with 15+ years in tech innovation',
     },
     {
       name: 'Michael Chen',
       role: 'CTO',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
       bio: 'Tech expert specializing in AI and cloud architecture',
     },
     {
       name: 'Emily Rodriguez',
       role: 'Head of Design',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
       bio: 'Award-winning designer creating stunning user experiences',
     },
     {
       name: 'David Kumar',
       role: 'Lead Developer',
-      image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
       bio: 'Full-stack expert with passion for clean code',
     },
     {
       name: 'Jessica Williams',
       role: 'Project Manager',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
       bio: 'Agile expert ensuring seamless project delivery',
     },
     {
       name: 'Alex Thompson',
       role: 'Marketing Director',
-      image: 'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
       bio: 'Strategic thinker driving brand growth',
     },
   ];
@@ -108,9 +108,9 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-3xl blur-2xl opacity-20"></div>
                 <img
-                  src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
                   alt="Team collaboration"
-                  className="relative rounded-3xl shadow-2xl w-full"
+                  className="relative rounded-3xl shadow-2xl w-full object-cover h-96"
                 />
               </div>
             </motion.div>

@@ -66,6 +66,27 @@ const Home = () => {
     'Google', 'Microsoft', 'Amazon', 'Meta', 'Apple', 'Netflix'
   ];
 
+  const testimonials = [
+    {
+      name: 'Sarah Chen',
+      company: 'TechVision Inc',
+      text: 'PremioIT transformed our business with their innovative solutions.',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
+    },
+    {
+      name: 'John Smith',
+      company: 'Digital Innovations',
+      text: 'Exceptional service and world-class technical expertise.',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+    },
+    {
+      name: 'Emily Rodriguez',
+      company: 'CloudStart Solutions',
+      text: 'Best technology partner we could ask for!',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
+    },
+  ];
+
   const floatingAnimation = {
     y: [0, -20, 0],
     transition: {
@@ -327,6 +348,56 @@ const Home = () => {
                   {stat.value}
                 </motion.div>
                 <div className="text-blue-100 font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                What Our Clients Say
+              </span>
+            </h2>
+            <p className="text-xl text-gray-600">Real testimonials from satisfied partners</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 border-2 border-blue-100 hover:border-blue-300 transition-all shadow-lg"
+              >
+                <div className="flex items-center space-x-4 mb-6">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover border-3 border-blue-300"
+                  />
+                  <div className="text-left">
+                    <h3 className="font-bold text-gray-900">{testimonial.name}</h3>
+                    <p className="text-sm text-blue-600">{testimonial.company}</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic mb-4">"{testimonial.text}"</p>
+                <div className="flex space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-yellow-400">★</span>
+                  ))}
+                </div>
               </motion.div>
             ))}
           </div>
